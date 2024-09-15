@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+@font-face {
+    font-family: "Helvetica Neue";
+    src: url("font/HelveticaNeueMedium.otf");
+}
+
+:root {
+    --bg-1: #337A99;
+    --bg-2: #3989AC;
+    --bg-3: #4099BF;
+    --color: #f9f9f9;
+    --font-12: 0.75rem;
+    --font-15: 0.9375rem;
+    --font-18: 1.6875rem;
+    --font-21: 1.3125rem;
+    --font-27: 1.6875rem;
+    --font-30: 1.875rem;
+    --font-33: 2.0625rem;
+    --font-39: 2.4375rem;
+    --font-42: 2.625rem;
+    --font-family: "Helvetica Neue";
+    --text-shadow: 1px 1px 1px #144352;
+}
+
+
+
+
+.font-12 {
+    font-size: var(--font-12);
+}
+
+.font-15 {
+    font-size: var(--font-15);
+}
+
+.font-18 {
+    font-size: var(--font-18);
+}
+
+.font-21 {
+    font-size: var(--font-21);
+}
+
+.font-27 {
+    font-size: var(--font-27);
+}
+
+.font-30 {
+    font-size: var(--font-30);
+}
+
+.font-33 {
+    font-size: var(--font-33);
+}
+
+.font-39 {
+    font-size: var(--font-39);
+}
+
+.font-39 {
+    font-size: var(--font-39);
+}
+.font-42 {
+    font-size: var(--font-42);
+}
+
+.custom-font {
+    font-family: var(--font-family), sans-serif;
+}
+
+
+body {
+    background: url("images/bgimage.jpg") center center/cover no-repeat fixed;
+    font-family: "Oswald", sans-serif !important;
+    overflow-x: hidden;
+    font-weight: 300 !important;
+    line-height: 1;
+}
+
+.hero-text::before,
+.overlay {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: -1;
+}
+
+
+
+/* =============  General Styling ================ */
+
+.custom-container {
+    margin-inline: auto;
+    width: 95% !important;
+}
+
+.container {
+    max-width: 1160px !important;
+}
+
+img {
+    width: 100%;
+}
+
+.f-12 {
+    font-size: 0.75rem;
+}
+
+
+.bg-1 {
+    background-color: var(--bg-1);
+    color: var(--color);
+    text-shadow: 1px 1px 1px var(--bg-2);
+}
+
+.bg-2 {
+    background-color: var(--bg-3);
+    color: var(--color);
+    text-shadow: var(--text-shadow);
+}
+
+.bg-3 {
+    background-color: var(--bg-3);
+    color: var(--color);
+    text-shadow: var(--text-shadow);
+}
+
+.custom-btn {
+    font-family: var(--font-family), sans-serif;
+    color: var(--color);
+}
+
+.heading {
+    font-size: var(--font-39);
+    text-align: center;
+}
+
+.text-shadow {
+    text-shadow: var(--text-shadow);
+}
+.custom-border {
+    border: solid 1px #2986a3;
+}
+
+/* ============================= */
+
+
+
+header {
+    padding: 15px 20px;
+}
+
+.logo {
+    color: var(--color);
+    font-weight: 700;
+}
+
+.info-title {
+    font-size: var(--font-27);
+    margin-bottom: 0.5rem;
+}
+
+.nav-link {
+    color: var(--color) !important;
+    font-family: var(--font-family), sans-serif;
+    transition: 0.4s;
+    padding: 15px 20px !important;
+}
+
+.nav-link:hover {
+    background-color: var(--bg-2);
+}
+
+.hero {
+    transition: 0.4s;
+    min-height: 390px;
+}
+
+.hero1 {
+    background: url('images/hero1.jpg') center center/cover no-repeat;
+}
+
+.hero2 {
+    background: url('images/hero2.jpg') center center/cover no-repeat;
+}
+
+.hero-text {
+    max-width: 400px;
+    min-height: 390px;
+    margin-left: auto;
+}
+
+.hero-text::before {
+    z-index: 0;
+}
