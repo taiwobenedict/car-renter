@@ -25,6 +25,9 @@
 
 
 
+.color {
+    color: var(--bg-1);
+}
 
 .font-12 {
     font-size: var(--font-12);
@@ -69,6 +72,14 @@
     font-family: var(--font-family), sans-serif;
 }
 
+.form-control:focus {
+    box-shadow: none !important;
+   
+}
+
+.form-control {
+    background-color: var(--color) !important;
+}
 
 body {
     background: url("images/bgimage.jpg") center center/cover no-repeat fixed;
@@ -119,7 +130,7 @@ img {
 }
 
 .bg-2 {
-    background-color: var(--bg-3);
+    background-color: var(--bg-2);
     color: var(--color);
     text-shadow: var(--text-shadow);
 }
@@ -197,4 +208,38 @@ header {
 
 .hero-text::before {
     z-index: 0;
+}
+
+
+.fa-star {
+    color: #f3671c;
+}
+
+.quote {
+    position: absolute;
+    font-size: 5rem;
+    top: 10px;
+    z-index: 0;
+    left: 10;
+    opacity: 0.1;
+    
+}
+
+.fa-brands,
+.card {
+    transition: 0.4s;
+}
+
+.fa-brands:hover,
+.card:hover img {
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+img {
+    transition: 0.4s;
+}
+
+.service-img {
+    overflow: hidden;
 }
