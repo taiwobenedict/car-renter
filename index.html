@@ -160,7 +160,9 @@
 
                 <div class="font-39 text-center mb-3">Our Fleet</div>
                 <div class="col-md-8 mb-5  mx-auto">
-                    <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas sunt quidem nulla, autem animi sapiente molestiae inventore nemo beatae doloribus voluptatibus eligendi deleniti illum vitae. Beatae pariatur praesentium quas unde?</p>
+                    <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas sunt
+                        quidem nulla, autem animi sapiente molestiae inventore nemo beatae doloribus voluptatibus
+                        eligendi deleniti illum vitae. Beatae pariatur praesentium quas unde?</p>
 
                 </div>
 
@@ -288,7 +290,7 @@
 
                             </div>
                         </div>
-                        
+
                     </div>
                     <!-- If we need pagination -->
                     <div class="swiper-pagination"></div>
@@ -404,6 +406,8 @@
                                 class="fa fa-chevron-right mr-2 text-shadow"></i> Airport Transportation </a>
                         <a href="#" class="d-flex mb-2 text-white align-items-center"><i
                                 class="fa fa-chevron-right mr-2 text-shadow"></i> Special Events </a>
+                        <a href="#" class="d-flex mb-2 text-white align-items-center"><i
+                                class="fa fa-chevron-right mr-2 text-shadow"></i> To/From Cruise Terminals </a>
 
                     </div>
                     <div class="col-md-4 mb-3">
@@ -436,13 +440,29 @@
             // Optional parameters
             direction: 'horizontal',
             loop: true,
-
-            slidesPerView: 4,
             spaceBetween: 20,
             autoplay: {
                 delay: 5000,
             },
 
+            slidesPerView: 1,
+            breakpoints: {
+                // When window width is >= 320px
+                320: {
+                    slidesPerView: 2,
+                    spaceBetween: 10,
+                },
+                // When window width is >= 640px
+                640: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+                // When window width is >= 1024px
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 30,
+                },
+            },
             // If we need pagination
             pagination: {
                 el: '.swiper-pagination',
