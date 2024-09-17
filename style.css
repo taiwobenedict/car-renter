@@ -6,9 +6,9 @@
 }
 
 :root {
-    --bg-1: #337A99;
-    --bg-2: #3989AC;
-    --bg-3: #4099BF;
+    --bg-1: #4F4F4F; /* Medium grey, lighter than --bg-2 */
+    --bg-2: #333;    /* Dark grey */
+    --bg-3: #666;
     --color: #f9f9f9;
     --font-12: 0.75rem;
     --font-15: 0.9375rem;
@@ -242,4 +242,19 @@ img {
 
 .service-img {
     overflow: hidden;
+}
+
+.form {
+    text-shadow: none;
+    background-color: #f4f4f4;
+    color: var(--bg-2);
+}
+
+.swiper {
+    /* width: 600px; */
+    height: 350px;
+  }
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: var(--bg-1);
 }
